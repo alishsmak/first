@@ -1,0 +1,287 @@
+/* Element selector */
+body {
+    margin: 0;
+    max-width: 100%;
+    background-color: #dce4e8;
+}
+
+/* Class selector */
+.banner {
+    content:url(web.jpg);
+    width: 80%;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    background-color: #628F8A;
+}
+
+.logo {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #343330;
+    box-shadow: 0vw 0.3vw 0.3vw #343330, -0.3vw 0.3vw 0.6vw #343330, 0.3vw 0.3vw 0.6vw #343330;
+    transition: 0.5s;
+    max-width: 5%;
+}
+
+/* Pseudo-class selector */
+.logo:active {
+    box-shadow: 0px 0px 0px;
+    transition: 0.1s;
+}
+
+.menu {
+    display: inline-flex;
+    gap: 2%;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 1%;
+    left: 15%;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        left: 9%;
+    }
+    .menu {
+      left: 13%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        left: 8%;
+    }
+    .menu {
+      left: 10%;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo {
+        left: 8%;
+    }
+    .menu {
+      left: 8%;
+    }
+}
+
+.menu_button {
+    padding: 1% 5%;
+    background-color: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: monospace;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #343330;
+    box-shadow: 0vw 0.3vw 0.3vw #343330, -0.3vw 0.3vw 0.6vw #343330, 0.3vw 0.3vw 0.6vw #343330;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu_button:hover {
+    color: #343330;
+}
+
+.menu_button:active {
+    box-shadow: 0px 0px 0px;
+    transition: 0.2s;
+}
+
+.menu_button:active:hover {
+    color: #343330;
+}
+
+.menu_button:visited {
+    color: #343330;
+}
+
+.menu_button:visited:hover {
+    color: #ffffff;
+}
+
+.navbar {
+    box-shadow: 0vw -0.3vw 0.6vw #343330;
+    border-bottom: 0.13vw solid #343330;
+    top: 2%;
+}
+
+/* Attribute selector */
+h1[id] {
+    padding-top: 1%;
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+
+.main_content {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    background-color: #ffffff;
+}
+
+/* ID selector */
+#task {
+    padding-top: 0%;
+}
+
+article[id] {
+    font-size: 1.25vw;
+}
+
+h3[class] {
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+.aside {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    background-color: #ffffff;
+    font-size: 1.25vw;
+}
+
+.footer {
+    padding: 2%;
+    color: #ffffff;
+    background-color: #343330;
+    font-size: 1vw;
+    display: flex;
+    max-width: 100%;
+    width: auto;
+}
+
+.footer_content {
+    text-align: left;
+    width: 100%;
+}
+
+.mad_ul {
+    list-style-type: none;
+    margin: 5%;
+    padding: 0;
+    width: 100%;
+}
+
+div[h5] {
+    font-size: 1.5vw;
+}
+
+h5 {
+    font-size: 1.1vw;
+}
+
+#map {
+    max-width: 100%;
+}
+
+.map_image {
+    width: 60%;
+    height: auto;
+}
+
+/* Repeated elements */
+
+.topic {
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text_image {
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    width: 60%;
+    height: 60%;
+}
+
+.link_button {
+    text-decoration: underline;
+    color: #70a3c6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.link_button:hover {
+    color: #ffffff;
+}
+
+.contact_button {
+    text-decoration: underline;
+    color: #70a3c6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact_button:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    .main_content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .aside {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 2.25vw;
+    }
+    h1[id] {
+        font-size: 3.5vw;
+    }
+    article[id] {
+        font-size: 2.25vw;
+    }
+    h3[class] {
+        font-size: 2.5vw;
+        font-weight: bolder;
+    }
+    .footer {
+        font-size: 2vw;
+    }
+    div[h5] {
+        font-size: 2.5vw;
+    }
+    h5 {
+        font-size: 2.1vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .main_content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .aside {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 2.75vw;
+    }
+    h1[id] {
+        font-size: 4vw;
+    }
+    article[id] {
+        font-size: 2.75vw;
+    }
+    h3[class] {
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    .footer {
+        font-size: 2.5vw;
+    }
+    div[h5] {
+        font-size: 3vw;
+    }
+    h5 {
+        font-size: 2.6vw;
+    }
+}
